@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #222;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+canvas {
+  border: 3px solid #eee;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+.options {
+  position: absolute;
+  color: #eee;
+  top: 0;
+  left: 0;
+  padding: 20px 55px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.options label {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.options input {
+  cursor: pointer;
+}

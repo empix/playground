@@ -1,0 +1,42 @@
+/* Variables */
+:root {
+  --base: #222831;
+  --light-base: #393e46;
+  --primary: #ffd369;
+  --secondary: #eeeeee;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--base);
+}
+
+/* Container */
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#canvas {
+  border: 1px solid var(--secondary);
+}
+
+#info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 20px;
+  color: var(--secondary);
+}

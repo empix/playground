@@ -1,0 +1,127 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Nunito', sans-serif;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #212121;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template:
+    'options options options' 50px
+    'tools canvas layers' 1fr
+    / 200px 1fr 200px;
+}
+
+/* Options */
+.options {
+  grid-area: options;
+  border: 2px solid #424242;
+}
+.options ul {
+  height: 100%;
+  list-style: none;
+  display: flex;
+}
+.options ul li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  font-size: 1.2em;
+  color: #eee;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.options ul li:hover {
+  background: #424242;
+}
+
+/* Tools */
+.tools {
+  grid-area: tools;
+  border: 2px solid #424242;
+  border-top: 0;
+}
+.tools ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+}
+.tools ul li {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  font-size: 1.2em;
+  color: #eee;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.tools ul li:hover {
+  background: #424242;
+}
+.tools ul li.selected {
+  background: #747474;
+}
+
+#color-picker {
+  width: 100%;
+  height: 50px;
+  border: 0;
+  cursor: pointer;
+}
+
+/* Canvas */
+.canvas {
+  grid-area: canvas;
+  border-bottom: 2px solid #424242;
+}
+.canvas canvas {
+  width: 100%;
+  height: 100%;
+}
+
+/* Layers */
+.layers {
+  grid-area: layers;
+  border: 2px solid #424242;
+  border-top: 0;
+}
+.layers ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+}
+.layers ul li {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  font-size: 1.2em;
+  color: #eee;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.layers ul li:hover {
+  background: #424242;
+}
