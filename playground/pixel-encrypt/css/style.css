@@ -1,0 +1,73 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,600;0,700;1,400;1,500&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Exo 2', sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #212121;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.options {
+  padding: 15px;
+  display: flex;
+}
+
+.canvas-container {
+  flex-grow: 1;
+}
+
+canvas {
+  border: 1px solid #eee;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+textarea {
+  background-color: #212121;
+  color: #eee;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  padding: 10px;
+  margin-right: 15px;
+}
+
+textarea::placeholder {
+  color: #eee;
+  opacity: 0.8;
+}
+
+button {
+  background-color: #eee;
+  color: #212121;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #eee;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+button:hover {
+  background-color: #d1d1d1;
+}

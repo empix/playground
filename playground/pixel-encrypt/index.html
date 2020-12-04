@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pixel Encrypt</title>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="options">
+        <input type="number" id="width" />
+        <input type="number" id="height" />
+        <textarea
+          id="text-for-encrypt"
+          cols="64"
+          rows="8"
+          placeholder="Text for encrypt"
+        ></textarea>
+        <button id="encrypt">Encrypt</button>
+      </div>
+      <div class="canvas-container">
+        <canvas></canvas>
+      </div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
