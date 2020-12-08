@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Enigma Tools Lib - Demo</title>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <textarea id="decoded" placeholder="Decoded text"></textarea>
+      <div class="options">
+        <button id="encode" data-from="decoded">Encode ▼</button>
+        <input type="number" id="shift" value="13" />
+        <button id="decode" data-from="encoded">Decode ▲</button>
+      </div>
+      <textarea id="encoded" placeholder="Encoded text"></textarea>
+    </div>
+
+    <script src="../enigmatools.js"></script>
+    <script src="./srcipt.js"></script>
+  </body>
+</html>
