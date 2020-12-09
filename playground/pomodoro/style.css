@@ -1,0 +1,85 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
+
+/* Variables */
+:root {
+  --background: #30323d;
+  --primary: #f8f3ea;
+  --secondary: #24786d;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Oswald', sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background);
+}
+
+/* Container */
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.timer-circle {
+  width: 90vw;
+  height: 90vw;
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 8px solid var(--primary);
+  margin-bottom: 20px;
+}
+
+.timer-circle #timer {
+  font-size: 6em;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.options {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 300px;
+}
+
+.options .option {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--primary);
+  color: var(--background);
+  cursor: pointer;
+  border: 1px solid var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+.options .option:hover {
+  opacity: 0.9;
+}
+
+.options .option:disabled {
+  background-color: transparent;
+  color: var(--primary);
+  border: 4px solid var(--primary);
+}
